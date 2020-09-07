@@ -1,2 +1,2 @@
 # ES6-features
-I have list file which explains usage of helps provided by ES6
+I have created a list of files which explains usage of helpers provided by ES6
