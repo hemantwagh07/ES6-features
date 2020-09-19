@@ -34,3 +34,38 @@ var deskTypes = desks.reduce(function (something, desk) {
 }, { sitting: 0, standing: 0 });
 
 console.log(deskTypes); // OUTPUT: { sitting: 3, standing: 2 }
+
+
+// ex : You want to create a new array that contains just the names of wizards who are in Hufflepuff.
+var wizards = [
+    {
+      name: 'Harry Potter',
+      house: 'Gryfindor'
+    },
+    {
+      name: 'Cedric Diggory',
+      house: 'Hufflepuff'
+    },
+    {
+      name: 'Tonks',
+      house: 'Hufflepuff'
+    },
+    {
+      name: 'Ronald Weasley',
+      house: 'Gryfindor'
+    },
+    {
+      name: 'Hermione Granger',
+      house: 'Gryfindor'
+    }
+  ];
+
+  // Get the names of the wizards in Hufflepuff
+var hufflepuff = wizards.reduce(function (newArr, wizard) {
+    if (wizard.house === 'Hufflepuff') {
+      newArr.push(wizard.name);
+    }
+    return newArr;
+  }, []);
+
+  console.log(hufflepuff); // OUTPUT : [ 'Cedric Diggory', 'Tonks' ]
